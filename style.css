@@ -169,17 +169,19 @@ input[type='number'] {
   padding-bottom: 5px;
 }
 
-
+.chapters {
+  font-size: 10px;
+}
 
 @media (max-width: 800px) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 @media (max-width: 500px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: (1, 1fr);
   }
   .card img {
     width: 100%;
@@ -187,13 +189,24 @@ input[type='number'] {
     object-fit: contain;
   }
   
-  .card-back, .card-front {
-  position: absolute;
+
+.card-back {
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
   width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
+
+.container {
+  padding: 5px 40px;
+}
+h1 {
+  font-size: 20px;
+}
+ button {
+   margin-left: 20px;
+ }
 }
 
 .footer {
