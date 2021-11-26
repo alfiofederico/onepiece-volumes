@@ -9,16 +9,25 @@
 </head>
 <body>
     <header>
-      <h1>One Piece: Volumes Overview</h1>
-      <form id="form">
-        <label for="chapter" class="tit">Search a Volume:</label>
-        <input type="number" min="1" max="2000" maxlength="3" step="1" id="search">
-        <button>Search</button>
-      </form>
+      <h1>One Piece: 100 Volumes Overview</h1>
+      <navbar class="nav">
+        <ul>
+          <li>
+            <a href="#eastblue" class="blue">East Blue</a>
+          </li>
+          <li>
+           <a href="#grandline" class="line">Grand Line</a>
+          </li>
+          <li>
+           <a href="#newworld" class="new">New World</a>
+          </li>
+        </ul>
+      </navbar>
     </header>
+     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
           <div class="container">
            <div class="cards">
-             <div class='card'>
+             <div class='card' id="eastblue">
                <div class='card-inner'>
                  <div class='card-front'>
                    <img src="/img/1.jpeg" alt="1">
@@ -874,7 +883,7 @@
                  </div>
                </div>
              </div>
-             <div class='card'>
+             <div class='card' id="grandline">
                <div class='card-inner'>
                  <div class='card-front'>
                    <img src="/img/16.jpeg" alt="1">
@@ -3599,7 +3608,7 @@
                  </div>
                </div>
              </div>
-             <div class='card'>
+             <div class='card' id="newworld">
                <div class='card-inner'>
                  <div class='card-front'>
                    <img src="/img/61.jpeg" alt="1">
